@@ -5,7 +5,7 @@ body {
   box-sizing: border-box;
   font-family: 'Phantom Storm';
   font-family: "Lato", sans-serif;
-  background-color: #141332;
+  background-color: #080824;
 }
 
 html {
@@ -47,10 +47,44 @@ li {
   list-style: none;
 }
 
+h1 {
+  font-family: 'Phantom Storm';
+  font-weight: 400;
+  font-size: 64px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  line-height: normal;
+}
+
+h5 {
+  font-family: 'Phantom Storm';
+  font-weight: 400;
+  font-size: 24px;
+  color: #8722EC;
+  text-transform: uppercase;
+  line-height: normal;
+}
+
+p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-transform: inherit;
+  line-height: normal;
+}
+
 .container {
   max-width: 1240px;
 }
 
+.va-similar-heading {
+  text-align: center;
+}
+
+.va-similar-heading h1 {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
 /*===== Start VA Header Area Css  =====*/
 .va-header-area {
   background-image: url('../images/header-bg.png');
@@ -58,6 +92,20 @@ li {
   background-size: 100% 100%;
   background-position: center center;
   padding: 30px 0;
+  position: relative;
+  z-index: 2;
+}
+.va-header-area::after {
+  content: '';
+  position: absolute;
+  opacity: 0.2;
+  background: radial-gradient(50% 50% at 50% 50%, #EAB6FE 0%, rgba(234, 182, 254, 0.00) 100%);
+  background-blend-mode: color-dodge;
+  width: 100%;
+  height: 190px;
+  left: 0;
+  bottom: -110px;
+  z-index: -1;
 }
 .va-header-content {
   display: flex;
@@ -106,7 +154,7 @@ nav.va-header-menu ul li a:hover,nav.va-header-menu ul li a.active {
   font-weight: 500;
   color: #FFFFFF;
 }
-nav.va-header-menu ul li a:hover, nav.va-header-menu ul li a.active::after {
+nav.va-header-menu ul li a:hover::after, nav.va-header-menu ul li a.active::after {
   content: '';
   position: absolute;
   background: url('../images/menu-active.png');
@@ -128,3 +176,162 @@ nav.va-header-menu ul li a:hover, nav.va-header-menu ul li a.active::after {
 }
 
 /*===== End VA Header Area Css  =====*/
+
+/*===== Start VA Hero Area Css  =====*/
+.va-hero-area {
+  background-image: url('../images/hero-bg.png');
+  background-size: 100% 100%;
+  background-position: center center;
+  padding-top: 250px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.va-hero-area::before {
+  content: '';
+  position: absolute;
+  opacity: 0.3;
+  background: radial-gradient(50% 50% at 50% 50%, #EAB6FE 0%, rgba(234, 182, 254, 0.00) 100%);
+  background-blend-mode: color-dodge;
+  left: -320px;
+  top: 0;
+  width: 620px;
+  height: 620px;
+  border-radius: 50%;
+}
+.va-hero-content {
+  text-align: center;
+}
+
+
+.va-hero-text-content h1 {
+  margin: 30px 0;
+}
+
+.va-hero-text-content p {
+  font-weight: 700;
+}
+
+.va-hero-down-btn img {
+  width: 40px;
+  height: auto;
+  margin-top: 320px;
+}
+
+/*===== End VA Hero Area Css  =====*/
+
+/*===== Start VA Success Area Css  =====*/
+.va-success-area {
+  background: url('../images/success-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  padding-top: 50px;
+  padding-bottom: 130px;
+
+}
+.va-success-content .col-lg-5 {
+  padding-right: 5px;
+}
+.va-success-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.va-success-left-content {
+  background: url('../images/success-left.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 35px 32px;
+}
+.single-va-success-right-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: url('../images/success-left.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 20px 32px;
+  margin-bottom: 15px;
+}
+
+.single-va-success-right-text h5 {
+  margin-bottom: 10px;
+  color: #FFFFFF;
+}
+
+.va-success-left-content h1 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.single-va-success-right-image img {
+  width: 90px;
+  height: auto;
+  margin-right: 30px;
+}
+
+
+/*===== End VA Success Area Css  =====*/
+
+/*===== Start VA About Area Css  =====*/
+.va-about-area {
+  padding: 130px 0;
+  height: 1000px;
+  background: linear-gradient(180deg, #080824 0%, rgba(8, 8, 36, 0.00) 49.07%), linear-gradient(180deg, rgba(8, 8, 36, 0.00) 51.67%, #080824 100%), url('../images/about-bg.png') lightgray 50% / cover no-repeat;
+  background-blend-mode: normal, normal, soft-light;
+  background-color: rgba(19, 22, 73, 1);
+}
+
+
+.single-va-about-content {
+  margin-bottom: 15px;
+}
+
+.single-va-about-content .col-lg-4 {
+  padding: 0 8px;
+}
+
+.single-va-about-text {
+  background: linear-gradient(180deg, rgba(135, 34, 236, 0.80) 0%, rgba(19, 22, 73, 0.80) 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 135px 25px 25px;
+}
+
+.single-va-about-text h5 {
+  margin-bottom: 15px;
+  color: #FFFFFF;
+}
+
+.single-va-about-image {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.single-va-about-image img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.single-va-about-text {
+  background: linear-gradient(180deg, rgba(135, 34, 236, 0.80) 0%, rgba(19, 22, 73, 0.80) 100%);
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: .7s;
+}
+
+.single-va-about-image:hover .single-va-about-text,.single-va-about-image.active .single-va-about-text {
+  left: 0;
+}
+
+
+/*===== End VA About Area Css  =====*/
