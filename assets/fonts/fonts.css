@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Phantom Storm';
+    src: url('PhantomStorm.eot');
+    src: url('PhantomStorm.eot?#iefix') format('embedded-opentype'),
+        url('PhantomStorm.woff2') format('woff2'),
+        url('PhantomStorm.woff') format('woff'),
+        url('PhantomStorm.ttf') format('truetype'),
+        url('PhantomStorm.svg#PhantomStorm') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
