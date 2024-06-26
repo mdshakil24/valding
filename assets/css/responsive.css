@@ -1,6 +1,9 @@
-@media all and (max-width: 1399px) {
+@media all and (max-width: 1235px) {
 
+    .va-protection-left-content {
+        padding: 35px;
 
+    }
 
 
 
@@ -8,23 +11,224 @@
 
 
 @media all and (max-width: 1199px) {
-   
 
+    h1 {
+        font-size: 63px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .va-header-area {
+        padding: 20px 0;
+    }
+
+    .va-hero-area {
+        padding-top: 140px;
+    }
+
+    .va-hero-down-btn img {
+        margin-top: 230px;
+    }
+
+    .va-success-area {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    .va-protection-right-content {
+        padding: 140px 30px 220px;
+    }
+
+    .va-trust-area {
+        padding: 110px 0;
+    }
+
+    .single-va-success-right-content {
+        padding: 17.5px 32px;
+    }
+
+    .va-about-area {
+        padding: 130px 0 0;
+    }
+
+    .va-trust-left-content {
+        padding: 40px 55px 68px 48px;
+    }
 
 
 }
 
+@media all and (min-width: 992px) {
+    nav.va-header-menu ul {
+        display: flex !important;
+    }
+}
 
 @media all and (max-width: 991px) {
-   
+    .mobile-menu-icon {
+        display: block;
+    }
 
+    .va-header-area {
+        position: inherit;
+    }
+
+    .va-header-social {
+        display: none;
+    }
+
+    .va-header-area {
+        padding: 20px 0;
+    }
+
+    nav.va-header-menu ul {
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background: rgba(15, 16, 41, 1);
+        top: 95px;
+        left: 0;
+        padding: 30px 0;
+        z-index: 999;
+        display: none;
+    }
+
+    nav.va-header-menu ul li a {
+        margin: 6px 0;
+    }
+
+    .va-success-left-content h1 br,
+    .va-trust-left-content h1 br {
+        display: none;
+    }
+
+    .va-hero-down-btn img {
+        margin-top: 140px;
+    }
+
+    .va-success-content .col-lg-5 {
+        padding-right: calc(var(--bs-gutter-x) * .5);
+    }
+
+    .single-va-success-right-content {
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    .va-hero-area::before,
+    .va-hero-area::after {
+        width: 200px;
+    }
+
+    .va-trust-content .col-lg-7,
+    .va-trust-right-content .col-lg-4 {
+        padding-right: calc(var(--bs-gutter-x)* .5);
+        padding-left: calc(var(--bs-gutter-x)* .5);
+    }
+
+    .single-va-trust-right-content {
+        margin-bottom: 20px;
+    }
+
+    .va-trust-left-content {
+        padding: 40px 25px;
+        margin-bottom: 20px;
+    }
+
+    .va-trust-area {
+        padding: 50px 0;
+    }
+
+    .va-contact-area {
+        padding-top: 40px;
+        padding-bottom: 140px;
+    }
+
+    .va-about-area {
+        padding: 75px 0 0;
+    }
+
+    .va-protection-right-content {
+        padding: 100px 150px;
+        margin-top: 25px;
+    }
+
+    .va-header-logo a {
+        font-size: 40px;
+    }
 
 
 }
 
 
 @media all and (max-width: 767px) {
-   
+    h1 {
+        font-size: 50px;
+    }
+
+    .back-to-top-btn {
+        display: none;
+    }
+
+    .va-hero-area {
+        padding-top: 100px;
+    }
+
+    .va-hero-down-btn img {
+        margin-top: 115px;
+    }
+
+    .va-hero-area::before,
+    .va-hero-area::after {
+        width: 170px;
+    }
+
+    .va-success-area {
+        padding-top: 50px;
+    }
+
+    .single-va-about-image img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .single-va-about-text {
+        padding: 55px 25px 25px;
+    }
+
+    .va-feedback-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .va-feedback-content .single-va-feedback-content:last-child {
+        margin-top: 75px;
+    }
+
+    .single-va-contact-us-content {
+        margin: 0 10px;
+    }
+
+    .single-va-contact-us-text {
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    .single-va-contact-us-image img {
+        width: 70px;
+    }
+
+    .single-va-success-right-content {
+        margin-top: 20px;
+    }
+
+    .single-va-success-right-content {
+        padding: 15px 20px;
+    }
 
 
 
@@ -32,16 +236,113 @@
 
 
 @media all and (max-width: 576px) {
-   
+    .va-similar-heading h1 {
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
 
+    .single-va-about-image img {
+        height: auto;
+    }
+
+    .single-va-about-text {
+        padding: 160px 25px 25px;
+    }
+
+    .va-contact-us-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .single-va-contact-us-content {
+        margin: 15px 0;
+    }
+    .va-contact-content {
+        padding: 40px 25px;
+    }
+    .va-trust-left-content p {
+        width: 100%;
+    }
+    .va-protection-right-content {
+        padding: 80px 50px;
+    }
 
 
 }
 
 
 @media all and (max-width: 450px) {
-   
+    .va-trust-left-content h1,h1 {
+        font-size: 44px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .va-feedback-area {
+        padding: 45px 0;
+    }
+    .va-protection-right-content {
+        padding: 70px 35px;
+    }
+    .va-hero-area {
+        padding-top: 70px;
+    }
+    .va-contact-area {
+        padding-bottom: 100px;
+    }
+    .va-feedback-area {
+        padding: 80px 0;
+    }
+    .single-va-feedback-text p {
+        font-size: 18px;
+    }
+    .single-va-feedback-logo img {
+        width: 200px;
+        height: 200px;
+    }
+    .single-va-feedback-logo::after {
+        width: 185px;
+        height: 185px;
+        top: 6px;
+    }
+    .va-protection-left-content,.va-success-left-content {
+        padding: 25px 20px;
+    }
+    .va-protection-area {
+        padding: 65px 0 0;
+    }
 
+    .single-va-success-right-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .single-va-success-right-text h5 {
+        margin: 20px 0;
+    }
+    .single-va-success-right-image img {
+        margin-right: 0;
+    }
+    .va-about-area {
+        padding: 50px 0 0;
+    }
+    .single-va-about-text {
+        padding: 50px 25px 25px;
+    }
+    .va-hero-down-btn img {
+        margin-top: 85px;
+    }
 
+    .va-success-area {
+        padding-top: 40px;
+    }
+
+    .va-hero-area::before, .va-hero-area::after {
+        width: 110px;
+    }
+    .va-header-logo a {
+        font-size: 38px;
+    }
 
 }
